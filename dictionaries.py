@@ -1,12 +1,13 @@
-students = {
-    "Hermione": "Graffindore",
-    "Harry": "Graffindore",
-    "Draco": "Graffindore",
-    "Ron": "Slythenren",
-}
+def dictionary():
+    students = {
+        "Hermione": "Graffindore",
+        "Harry": "Graffindore",
+        "Draco": "Graffindore",
+        "Ron": "Slythenren",
+    }
 
-for student in students:
-    print(student, students[student], sep=", ")
+    for student in students:
+        print(student, students[student], sep=", ")
 
 
 def list_of_dictionaries():
@@ -23,4 +24,5 @@ def list_of_dictionaries():
         )
 
 
+# dictionary()
 list_of_dictionaries()
