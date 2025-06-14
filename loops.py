@@ -1,7 +1,3 @@
-from ast import While
-import time
-
-
 def while_1():
     i = 3
     while i != 0:
