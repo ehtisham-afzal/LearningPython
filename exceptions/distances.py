@@ -20,7 +20,10 @@ def main():
 
 
 def convert_au_to_m(au):
+    if not isinstance(au, (int, float)):
+        raise TypeError("au must be int or float")
     return au * 149597870700
 
 
-main()
+if __name__ == "__main__":
+    main()
