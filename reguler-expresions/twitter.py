@@ -14,6 +14,8 @@ def get_twitter_username(url):
         re.IGNORECASE,
     ):
         return matches.group(1)
+
+        
     # 7 non capturing group on REGEX with (?:...) and use wolverus operator on conditionals
     # if matches := re.search(
     #     r"^(?:https?://)?(?:www\.)?(?:twitter|x)\.com/(.+)$", url, re.IGNORECASE
