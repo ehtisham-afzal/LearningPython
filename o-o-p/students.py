@@ -1,16 +1,34 @@
-# Dictionry method
+# class method
+
+
+class Student: ...
+
+
 def main():
     student = get_student()
-    if student["name"] == "ehtisham":
-        student["house"] = "Khanpalow"
-    print(f"{student['name']} from {student['house']}")
+    print(f"{student.name} from {student.house}")
 
 
 def get_student():
-    student = {}
-    student["name"] = input("Name ")
-    student["house"] = input("House ")
+    student = Student
+    student.name = input("Name ")
+    student.house = input("House ")
     return student
+
+
+# Dictionry method
+# def main():
+#     student = get_student()
+#     if student["name"] == "ehtisham":
+#         student["house"] = "Khanpalow"
+#     print(f"{student['name']} from {student['house']}")
+
+
+# def get_student():
+#     student = {}
+#     student["name"] = input("Name ")
+#     student["house"] = input("House ")
+#     return student
 
 
 # List Method
