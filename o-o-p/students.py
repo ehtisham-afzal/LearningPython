@@ -1,19 +1,83 @@
-# class method
+# Returning string value with __str__ method
+class Student:
+    def __init__(self, name, house):
+        if not name:
+            raise ValueError("Missing Name")
+        self.name = name
+        if house not in ["khanpalow", "allahdhand", "islamabad"]:
+            raise ValueError("Invalid house name ")
+        self.house = house
 
-
-class Student: ...
+    def __str__(self):
+        return f"{self.name} from {self.house}"
 
 
 def main():
-    student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(get_student())
 
 
 def get_student():
-    student = Student
-    student.name = input("Name ")
-    student.house = input("House ")
-    return student
+    name = input("Name ")
+    house = input("House ")
+    return Student(name, house)
+
+
+# error raising and handling on classes
+# class Student:
+#     def __init__(self, name, house):
+#         if not name:
+#             raise ValueError("Missing Name")
+#         self.name = name
+#         if house not in ["khanpalow", "allahdhand","islamabad"]:
+#             raise ValueError("Invalid house name ")
+#         self.house = house
+
+
+# def main():
+#     student = get_student()
+#     print(f"{student.name} from {student.house}")
+
+
+# def get_student():
+#     name = input("Name ")
+#     house = input("House ")
+#     student = Student(name, house)
+#     return student
+
+
+# with class instance method
+# class Student:
+#     def __init__(self, name, house):
+#         self.name = name
+#         self.house = house
+
+
+# def main():
+#     student = get_student()
+#     print(f"{student.name} from {student.house}")
+
+
+# def get_student():
+#     name = input("Name ")
+#     house = input("House ")
+#     student = Student(name, house)
+#     return student
+
+
+# class method
+# class Student: ...
+
+
+# def main():
+#     student = get_student()
+#     print(f"{student.name} from {student.house}")
+
+
+# def get_student():
+#     student = Student()
+#     student.name = input("Name ")
+#     student.house = input("House ")
+#     return student
 
 
 # Dictionry method
