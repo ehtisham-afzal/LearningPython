@@ -3,9 +3,9 @@ class Student:
     def __init__(self, name, house):
         if not name:
             raise ValueError("Missing Name")
-        self.name = name
         if house not in ["khanpalow", "allahdhand", "islamabad"]:
             raise ValueError("Invalid house name ")
+        self.name = name
         self.house = house
 
     def __str__(self):
@@ -20,6 +20,9 @@ def get_student():
     name = input("Name ")
     house = input("House ")
     return Student(name, house)
+
+
+# --------------------------------------------------------------------------------------------- #
 
 
 # error raising and handling on classes
@@ -45,6 +48,8 @@ def get_student():
 #     return student
 
 
+# --------------------------------------------------------------------------------------------- #
+
 # with class instance method
 # class Student:
 #     def __init__(self, name, house):
@@ -63,6 +68,8 @@ def get_student():
 #     student = Student(name, house)
 #     return student
 
+# --------------------------------------------------------------------------------------------- #
+
 
 # class method
 # class Student: ...
@@ -78,6 +85,9 @@ def get_student():
 #     student.name = input("Name ")
 #     student.house = input("House ")
 #     return student
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 
 # Dictionry method
